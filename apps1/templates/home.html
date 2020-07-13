@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href={% static 'home.css' %}>
+{% endblock css %}
+
+{% block body %}
+
+    <div class="first">
+        <h1>Select Your Options</h1>
+        <h4>log in as {{ user }}</h4>
+        <form action="" method="get">
+            <button name="check" class="btn" id="btn1" type="submit" value="true">CHECK BALANCE</button>
+            <button name="withdraw" class="btn" id="btn2" type="submit" value="true">WITHDRAW MONEY</button>
+            <button name="reset" class="btn" id="btn3" type="submit" value="true">RESET PASSWORD</button>
+            <button name="deposite" class="btn" id="btn4" type="submit" value="true">DEPOSITE MONEY</button>
+            <button name="logout" class="btn" id="btn5" type="submit" value="true">LOGOUT</button>
+        </form>
+    </div>
+
+
+{% endblock body %}        
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

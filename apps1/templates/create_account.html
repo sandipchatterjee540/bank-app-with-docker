@@ -1,0 +1,39 @@
+{% extends 'basic.html' %}
+
+{% block css %}
+{% load static %}
+<link href={% static 'create_account.css' %} rel="stylesheet">
+{% endblock css %}
+
+{% block body %}
+
+<div class="first">
+    <h1>Create your Account</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="name" class="lebel" id="lebel1">USERNAME</label>
+        <input type="text" name="username" id="name" class="item">
+
+        <label for="password" class="lebel">PASSWORD</label>
+        <input type="password" name="password" id="password" class="item">
+
+        <label for="password1" class="lebel">PASSWORD TYPE AGAIN</label>
+        <input type="password" name="password1" id="password1" class="item">
+
+        <label for="mobile" class="lebel">MOBILE NO</label>
+        <input type="tel" name="mobile" id="mobile" class="item">
+
+        <label for="money" class="lebel">DEPOSITE MONEY</label>
+        <input type="text" name="money" id="money" class="item">
+
+        MALE : <input type="radio" name="sax" value="male"> FEMALE : <input type="radio" name="sax" value="female">
+
+        <button name="create_account" class="btn" id="btn1" type="submit" value="true">CREATE ACCOUNT</button>
+        <button type="button" class="btn" id="btn2"><a href="login">I HAVE ALRADY ACCOUNT</a></button>
+    </form>
+</div>
+
+
+
+
+{% endblock body %}

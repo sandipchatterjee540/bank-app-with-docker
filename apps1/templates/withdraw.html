@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SandiBank-Withdraw-money</title>
+    <link rel="stylesheet" href={% static 'withdraw.css' %}>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="first">
+        <h1>WITHDRAW YOUR MONEY</h1>
+        <form action="" method="post">
+        {% csrf_token %}
+            <label for="name" class="lebel" id="lebel1">ENTER YOUR WITHDRAW MONEY</label>
+            <input type="text" name="withdraw" id="withdraw" class="item">
+            
+            <label for="password" class="lebel">PASSWORD</label>
+            <input type="password" name="password" id="password" class="item">
+            
+            <button name="create_account" class="btn" id="btn1" type="submit" value="true">WITHDRAW CASH</button>
+        </form>
+    </div>
+</body>
+
+</html>

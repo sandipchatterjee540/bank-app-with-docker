@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SandiBank</title>
+    <link rel="stylesheet" href={% static 'deposite.css' %}>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="first">
+        <h1>ENTER YOUR DEPOSITE MONEY</h1>
+        <form action="" method="post">
+         {% csrf_token %}
+            <label for="name" class="lebel" id="lebel1">ENTER YOUR MONEY</label>
+            <input type="text" name="deposite" id="name" class="item">
+
+
+            <label for="password" class="lebel">PLEASE ENTER YOUR PASSWORD</label>
+            <input type="password" name="password" id="password" class="item">
+            <button name="addcash" class="btn" id="btn1" type="submit" value="true">ADD CASH</button>
+        </form>
+   
+    </div>
+</body>
+
+</html>

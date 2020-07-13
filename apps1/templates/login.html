@@ -1,0 +1,25 @@
+{% extends 'basic.html' %}
+
+
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href={% static 'login.css' %}>
+{% endblock css %}
+
+{% block body %}
+
+<div class="first">
+    <h1>Please Login your Account</h1>
+    <form action="" method="POST">
+    {% csrf_token %}
+        <label for="name" class="lebel" id="lebel1">USERNAME</label>
+        <input type="text" name="username" id="name" class="item">
+        <label for="password" class="lebel">PASSWORD</label>
+        <input type="password" name="password" id="password" class="item">
+        <button name="create_account" class="btn" id="btn1" type="submit" value="true">LOGIN</button>
+    </form>
+</div>
+
+
+{% endblock body %}

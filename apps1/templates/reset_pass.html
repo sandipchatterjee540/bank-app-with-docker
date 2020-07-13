@@ -1,0 +1,29 @@
+{% extends 'basic.html' %}
+
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href={% static 'reset_pass.css' %}>
+{% endblock css %}
+
+
+{% block body %}
+
+<div class="first">
+    <h1>CHANGE YOUR PASSWORD</h1>
+    <form action="" method="post">
+    {% csrf_token %}
+        <label for="password" class="lebel">OLD PASSWORD</label>
+        <input type="password" name="old_password" id="password" class="item">
+
+        <label for="password" class="lebel">NEW PASSWORD</label>
+        <input type="password" name="new_password" id="password" class="item">
+
+        <label for="password" class="lebel">TYPE AGAIN PASSWORD</label>
+        <input type="password" name="new1_password" id="password" class="item">
+
+        <button name="create_account" class="btn" id="btn1" type="submit" value="true">CHANGE PASSWORD</button>
+    </form>
+</div>
+
+{% endblock body %}

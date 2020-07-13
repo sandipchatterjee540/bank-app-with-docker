@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("bg.jpg");
+    color:white;
+
+}
+
+h1{
+    margin-top: 30px;
+}
+
+.first{
+    border: 2px solid #ED871B;
+    background-color: #2D2A23;
+    position: absolute;
+    top: 59px;
+    left: 480px;
+    text-align: center;
+    height: 610px;
+    width: 602px;
+    border-radius: 23px;
+    font-family: 'Girassol', cursive;
+    opacity: 0.9;
+}
+
+.btn{
+    border: 4px solid #F0EBBF;
+    border-radius: 5px;
+    background-color: #2D2A23;
+    text-align: center;
+    /* position: absolute; */
+    color: white
+}
+
+.btn:hover{
+    border: 4px solid greenyellow;
+    border-radius: 20px;
+
+}
+
+#btn1{
+    position: absolute;
+    top: 130px;
+    left: 205px;
+    height: 53px;
+    width: 187px;
+}
+
+
+#btn2{
+    /* top:8px; */
+    position: absolute;
+    top: 235px;
+    left: 205px;
+    height: 53px;
+    width: 187px;
+}
+
+#btn3{
+    /* top:8px; */
+    position: absolute;
+    top: 350px;
+    left: 205px;
+    height: 53px;
+    width: 187px;
+}
+
+#btn4{
+    /* top:8px; */
+    position: absolute;
+    top: 462px;
+    left: 205px;
+    height: 53px;
+    width: 187px;
+}
+
+#btn5{
+    /* top:8px; */
+    position: absolute;
+    top: 545px;
+    left: 205px;
+    height: 53px;
+    width: 187px;
+}
