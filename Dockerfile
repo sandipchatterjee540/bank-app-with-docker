@@ -6,4 +6,4 @@ COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
 EXPOSE 8000
-CMD exec gunicorn djangoapp.wsgi:application --bind 0.0.0.0:8000 --workers 3
+CMD exec gunicorn my_bank.wsgi:application --bind 0.0.0.0:8000 --workers 3
